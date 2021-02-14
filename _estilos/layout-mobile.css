@@ -1,0 +1,143 @@
+
+/*               829px                  */
+
+/*TIPOGRAFIA*/
+
+header div#chamada h1 {
+    font-size: 350%;
+}
+header div#chamada h4 {
+    font-size: 200%;
+}
+header div#chamada a {
+    border-radius: 10px;
+}
+h2 {
+    font-size: 250%;
+}
+
+/*NAV*/
+
+nav div {
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    
+}
+nav ul#left, nav ul#right {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    background: linear-gradient(90deg, rgb(221, 9, 9), rgb(223, 43, 43));
+}
+nav ul#right {
+    top: 192px;
+}
+nav ul#icone-menu-mobile {
+  display: inline;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+nav ul li a, nav ul li a#criar-conta, .itemEstatico, .iconeEstatico {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: none;
+    font-size: 80%;
+}
+@media screen and (max-width: 829px) and (min-width: 500px) {
+    header div#chamada h4 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+} 
+
+
+/*DOMINGO PERFEITO*/
+
+div#pontos-chaves-mestre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+div.pontos-chaves {
+    width: 80%;
+    margin-bottom: 40px;
+}
+div.pontos-chaves p {
+    font-size: 115%;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+/*TESTEMUNHOS*/
+
+div#testemunha-centro {
+    width: 300px;
+}
+section#testemunha div#testemunha-centro div#testemunhos ul p {
+    font-size: 115%;
+    font-weight: 300;
+}
+
+/*PLANOS*/
+
+
+    /* div#plano-pai {
+        width: 95%;
+        height: 430px;
+        margin: 100px auto 0 auto;
+    
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: space-between;
+    }
+    div.plano-medio {
+        width: 250px;
+        height: 100%;
+    } */
+
+
+    section#plano-principal-2 {
+        width: 100%;
+        height: 1700px;
+    }
+    div#plano-pai {
+        width: 95%;
+        height: 1290px;
+        margin: 100px auto 0 auto;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    div.plano-medio {
+        width: 300px;
+        height: 100%;
+        margin: 0 auto;
+    }
+div.plano-medio-cima {
+    margin-top: 30px;
+}
+
+
+/*FOOTER*/
+
+footer div#mapa {
+    display: none;
+}
+footer div#info {
+    width: 95%;
+}

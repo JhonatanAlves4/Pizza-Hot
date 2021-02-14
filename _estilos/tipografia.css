@@ -1,0 +1,219 @@
+/*
+
+TIPOGRAFIA
+
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+
+CORES
+
+VERDE-ESCURO: #065902
+VERDE MAIS CLARO: #078C31
+AMARELO: F2B705
+VERMELHO MAIS CLARO: #F03733
+VERMELHO ESCURO: #D90404
+
+CINZA-ESCURO: #404040
+CINZA BEM CLARO: #F7F7F7
+*/
+
+* {
+    font-size: 16px;
+}
+h1, h2, h3 {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D90404;
+}
+h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #F2B705;
+}
+h1 {
+    font-size: 600%;
+    font-weight: 200;
+}
+h2 {
+    font-size: 400%;
+    font-weight: 200;
+}
+h2::after {
+    display: block;
+    background-color: #078C31;
+
+    height: 5px;
+    width: 150px;
+    margin: 30px auto 20px;
+    content: '';
+}
+h4 {
+    font-size: 150%;
+    font-weight: 150%;
+    padding: 20px 0;
+}
+p, li, a {
+    font-family:'Open Sans', sans-serif;
+    color: #404040;
+}
+p.destaque {
+    font-size: 130%;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #404040;
+    text-align: center;
+    width: 60%;
+}
+
+/*----------------------*/
+/*ELEMENTOS DO HEADER*/
+/*----------------------*/
+
+header div#chamada h1 {
+    color: #fff;
+    text-shadow: 4px 6px 2px #000;
+    animation: HeaderH1-moverParaDireita 1.2s;
+    animation-timing-function: ease-out;
+}
+header div#chamada h4 {
+    font-size: 250%;
+    text-shadow: 4px 6px 2px #000;
+    margin-bottom: 0;
+    animation: HeaderH4-moverParaDireita 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+header div#chamada a {
+    font-size: 110%;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    background: linear-gradient(rgba(7,140,49,55)0%, rgba(6,89,2,35)50%, rgba(6,89,2,35)100%);
+    padding: 15px 60px;
+    border-radius: 50px;
+
+    animation: HeaderA-moverParaCima 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    display: inline-block;
+}
+
+/*------------------------*/
+/*SEÇÃO - DOMINGO PERFEITO*/
+/*------------------------*/
+
+div.pontos-chaves h4 {
+    color: #404040;
+}
+div.pontos-chaves h4::after {
+    display: block;
+    background-color: #078C31;
+
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: '';
+}
+
+/*-----------*/
+/*SEÇÃO PIZZA*/
+/*-----------*/
+
+section#pizza p.destaque {
+    color: #fff;
+    width: 40%;
+    opacity: 0;
+}
+section#pizza ul li {
+    color: #fff;
+    list-style: none;
+    line-height: 1.8;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+/*-----------------*/
+/*SEÇÃO TESTEMUNHA*/
+/*-----------------*/
+
+section#testemunha p.destaque {
+    color: #404040;
+    width: 41%;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 20px;
+}
+
+/*------------*/
+/*SEÇÃO PLANOS*/
+/*------------*/
+
+section#plano-principal h4 {
+    color: #D90404;
+}
+section#plano-principal ul {
+    margin-top: 25px;
+    
+}
+section#plano-principal ul li {
+    font-size: 85%;
+    
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    line-height: 2;
+    text-decoration: none;
+}
+div div.plano-baixo p {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+}
+
+/*-------------------------*/
+/*   PLANOS 2 RESPONSIVO   */
+/*-------------------------*/
+
+section#plano-principal-2 h4 {
+    color: #D90404;
+    font-weight: 100;
+}
+section#plano-principal-2 ul {
+    margin-top: 25px;
+}
+section#plano-principal-2 ul li {
+    font-size: 85%;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    line-height: 2;
+}
+div.plano-medio-baixo p {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+}
+
+/*------------*/
+/*   FOOTER   */
+/*------------*/
+
+footer div#info h4 {
+    color: #ccc;
+}
+footer div#info ul {
+    margin-left: 20px;
+    margin-bottom: 130px;
+}
+footer div#info ul li {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 5px;
+}
